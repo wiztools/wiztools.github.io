@@ -1,0 +1,278 @@
+[
+  {
+    "name": "RESTClient",
+    "description": "Tool to test HTTP communication / RESTful WebServices.",
+    "url": "https://github.com/wiztools/rest-client",
+    "category": "tool"
+  },
+  {
+    "name": "Cli Tools Bundle",
+    "description": "Bundle of cli-tools from WizTools for Windows.",
+    "url": "http://cli-bundle.wiztools.org/",
+    "category": "tool"
+  },
+  {
+    "name": "Regular Expression Tester",
+    "description": "Java Swing tool to quickly test RE patterns.",
+    "url": "https://github.com/wiztools/re-test",
+    "category": "tool"
+  },
+  {
+    "name": "Wiz WebServer",
+    "description": "A tiny WebServer written in Java. Useful for Ajax testing.",
+    "url": "https://bitbucket.org/wiztools/wiz-webserver",
+    "category": "tool"
+  },
+  {
+    "name": "StaGen",
+    "description": "Static site generator written in Java 8 supporting StringTemplate 4 for template rendering, Markdown for content and JSON for configuration.",
+    "url": "https://github.com/wiztools/stagen",
+    "category": "tool"
+  },
+  {
+    "name": "CSS Import Resolver",
+    "description": "Generate optimized CSS by including @import files inline.",
+    "url": "https://github.com/wiztools/css-import-resolver",
+    "category": "tool"
+  },
+  {
+    "name": "Multicast Tool",
+    "description": "Tool to test multicast communication.",
+    "url": "https://github.com/wiztools/multicast-tool",
+    "category": "tool"
+  },
+  {
+    "name": "S3 Upload",
+    "description": "Tool to upload files to S3 bucket.",
+    "url": "https://github.com/wiztools/s3upload-cli",
+    "category": "tool"
+  },
+  {
+    "name": "Amazon SES Cli",
+    "description": "Tool to send email using AWS SES.",
+    "url": "https://github.com/wiztools/amazon-ses-cli",
+    "category": "tool"
+  },
+  {
+    "name": "EC2 Control",
+    "description": "Cli tool to start/stop AWS EC2 instances.",
+    "url": "https://github.com/wiztools/ec2-control",
+    "category": "tool"
+  },
+  {
+    "name": "OpsWorks Control",
+    "description": "Cli tool to start/stop AWS OpsWorks stacks/instances.",
+    "url": "https://github.com/wiztools/opsworks-control",
+    "category": "tool"
+  },
+  {
+    "name": "Markdown-to-HTML",
+    "description": "Convert MD files to HTML.",
+    "url": "https://github.com/wiztools/markdown2html",
+    "category": "tool"
+  },
+  {
+    "name": "JFind",
+    "description": "Tool to search from where in the CLASSPATH specified class file is available.",
+    "url": "https://bitbucket.org/wiztools/jfind",
+    "category": "tool"
+  },
+  {
+    "name": "Classloader Servlet",
+    "description": "Servlet tool to aid in debugging classpath / classloader issues in Java web applications.",
+    "url": "https://github.com/wiztools/classloader-servlet",
+    "category": "tool"
+  },
+  {
+    "name": "Text Encoding Util",
+    "description": "Cli utility to transform text from one encoding to another, and to test if a text file conforms to charset specified by a particular encoding.",
+    "url": "https://github.com/wiztools/text-encoding-util",
+    "category": "tool"
+  },
+  {
+    "name": "Date Arithmetic",
+    "description": "Add / subtract years / months / days to a date and get result.",
+    "url": "https://github.com/wiztools/date-arithmetic",
+    "category": "tool"
+  },
+  {
+    "name": "Binary Calculator",
+    "description": "Tool inspired by Unix bc.",
+    "url": "https://github.com/wiztools/bc",
+    "category": "tool"
+  },
+  {
+    "name": "Tree",
+    "description": "Inspired by Unix tree.",
+    "url": "https://github.com/wiztools/tree",
+    "category": "tool"
+  },
+  {
+    "name": "Base64 Cli",
+    "description": "Compute Base64 encoding of any file.",
+    "url": "https://github.com/wiztools/base64-cli",
+    "category": "tool"
+  },
+  {
+    "name": "JWget",
+    "description": "Tool inspired by Unix wget.",
+    "url": "https://github.com/wiztools/jwget",
+    "category": "tool"
+  },
+  {
+    "name": "Portscanner",
+    "description": "A port-scanning tool.",
+    "url": "https://github.com/wiztools/portscanner-cli",
+    "category": "tool"
+  },
+  {
+    "name": "Digest Hex Util",
+    "description": "GUI tool to compute hex-encoded checksum (md5 / sha) for a given string.",
+    "url": "https://github.com/wiztools/digest-hex-util",
+    "category": "tool"
+  },
+  {
+    "name": "Checksum Compute",
+    "description": "GUI tool to compute SHA and MD5 checksum of given file.",
+    "url": "https://github.com/wiztools/checksum-compute",
+    "category": "tool"
+  },
+  {
+    "name": "Json Validator",
+    "description": "Cli Json validator and formattor.",
+    "url": "https://github.com/wiztools/json-validator",
+    "category": "tool"
+  },
+  {
+    "name": "XML Validator",
+    "description": "Cli tool to validate correctness of your XML against a schema.",
+    "url": "https://github.com/wiztools/xml-validator",
+    "category": "tool"
+  },
+  {
+    "name": "Xslt Transform",
+    "description": "Tool to transform XMLs using XSL stylesheets.",
+    "url": "https://github.com/wiztools/xslt-transform",
+    "category": "tool"
+  },
+  {
+    "name": "Xsd Gen",
+    "description": "Command-line tool written in Java for generating XSD from an XML.",
+    "url": "https://github.com/wiztools/xsd-gen",
+    "category": "tool"
+  },
+  {
+    "name": "Pomodoro Timer",
+    "description": "Pomodoro Timer written in Java Swing.",
+    "url": "https://github.com/wiztools/pomodoro-timer-ui",
+    "category": "tool"
+  },
+  {
+    "name": "Timezone Converter",
+    "description": "Cross platform Timezone Converter tool.",
+    "url": "https://github.com/wiztools/timezone-converter",
+    "category": "tool"
+  },
+  {
+    "name": "Screen Color Picker",
+    "description": "Java cli tool to pick colors from screen.",
+    "url": "https://github.com/wiztools/screen-color-picker",
+    "category": "tool"
+  },
+  {
+    "name": "URL Encoder",
+    "description": "GUI tool for encoding / decoding URL special characters.",
+    "url": "https://github.com/wiztools/urlencode-ui",
+    "category": "tool"
+  },
+  {
+    "name": "JavaDoc Jar Viewer",
+    "description": "Cli tool to open Java doc packaged as Jar in browser.",
+    "url": "https://github.com/wiztools/javadoc-jar-viewer",
+    "category": "tool"
+  },
+  {
+    "name": "Java System Property Cli",
+    "description": "Tool to list Java system properties.",
+    "url": "https://github.com/wiztools/system-property-cli",
+    "category": "tool"
+  },
+  {
+    "name": "Java SimpleDateFormat Tester",
+    "description": "GUI tool to test SimpleDateFormat expression.",
+    "url": "https://github.com/wiztools/java-simpledateformat-tester",
+    "category": "tool"
+  },
+  {
+    "name": "Any Url Http Server",
+    "description": "An API mocking tool.",
+    "url": "https://github.com/wiztools/anyurlhttpserver",
+    "category": "tool"
+  },
+  {
+    "name": "Bulk Mailer",
+    "description": "Bulk mailer script written in Perl.",
+    "url": "https://github.com/wiztools/bulk-mailer",
+    "category": "tool"
+  },
+  {
+    "name": "WizCrypt",
+    "description": "File encryption app and library.",
+    "url": "https://github.com/wiztools/wizcrypt",
+    "category": "tool"
+  },
+  {
+    "name": "moneylib",
+    "description": "Golang library to represent money value.",
+    "url": "https://github.com/wiztools/moneylib",
+    "category": "library"
+  },
+  {
+    "name": "wiz-cliparse",
+    "description": "Cli argument parsing lib that Node deserves.",
+    "url": "https://github.com/wiztools/wiz-cliparse",
+    "category": "library"
+  },
+  {
+    "name": "oEmbed Java API",
+    "description": "A clean API to access and parse oEmbed services.",
+    "url": "https://bitbucket.org/wiztools/oembed",
+    "category": "library"
+  },
+  {
+    "name": "Pagination Lib",
+    "description": "A Java library to paginate Collections.",
+    "url": "https://bitbucket.org/wiztools/pagination-lib",
+    "category": "library"
+  },
+  {
+    "name": "Commons Lib",
+    "description": "This is a rich collection of commonly used convenience classes and data-structures for Java.",
+    "url": "https://bitbucket.org/wiztools/wiztools-commons-lib",
+    "category": "library"
+  },
+  {
+    "name": "Feed Lib",
+    "description": "Abstraction library for RSS and Atom parsing.",
+    "url": "https://bitbucket.org/wiztools/feed-lib",
+    "category": "library"
+  },
+  {
+    "name": "Cache Lib",
+    "description": "Abstraction library for Java cache providers.",
+    "url": "https://github.com/wiztools/cache-lib",
+    "category": "library"
+  },
+  {
+    "name": "Ant XPath Task",
+    "description": "Ant task for executing XPath expression on XML and storing it as a property.",
+    "url": "https://github.com/wiztools/ant-xpath-task",
+    "category": "library"
+  },
+  {
+    "name": "Web Tester",
+    "description": "Hosted web testing tool, with legacy code and info links preserved in the products page.",
+    "url": "http://web-tester.appspot.com/",
+    "category": "hosted"
+  }
+]
