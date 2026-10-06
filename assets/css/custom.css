@@ -39,6 +39,16 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--wiz-accent); ou
 .pdf-carousel-track .pdf-carousel-slide { flex: 0 0 100%; margin: 0; scroll-snap-align: start; scroll-snap-stop: always; }
 .pdf-carousel-track .pdf-carousel-slide img { display: block; width: 100%; max-height: 75svh; object-fit: contain; margin: 0 auto; }
 .pdf-carousel-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: .75rem; font-size: .875rem; }
-.pdf-carousel-controls button { border: 1px solid currentColor; border-radius: .4rem; padding: .35rem .85rem; cursor: pointer; }
-.pdf-carousel-controls button:disabled { opacity: .35; cursor: default; }
+#content:has(.pdf-carousel) > h1 { text-align: left; }
+.pdf-carousel-stage { position: relative; }
+.pdf-carousel-stage button { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border: 1px solid rgb(255 255 255 / .3); border-radius: 50%; background: rgb(0 0 0 / .5); color: white; font-size: 1.25rem; cursor: pointer; opacity: 0; transition: opacity .15s ease; }
+.pdf-carousel-stage button[data-prev] { left: .75rem; }
+.pdf-carousel-stage button[data-next] { right: .75rem; }
+.pdf-carousel-stage:hover button, .pdf-carousel-stage:focus-within button { opacity: 1; }
+.pdf-carousel-stage:hover button:disabled, .pdf-carousel-stage:focus-within button:disabled { opacity: .3; cursor: default; }
+@media (hover: none), (pointer: coarse) {
+  .pdf-carousel-stage button { opacity: 1; }
+  .pdf-carousel-stage button:disabled { opacity: .3; cursor: default; }
+}
+@media (prefers-reduced-motion: reduce) { .pdf-carousel-stage button { transition: none; } }
 .pdf-carousel-controls a { margin-left: auto; }
