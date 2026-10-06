@@ -1,0 +1,20 @@
+{{- $title := .Get "title" -}}
+{{- $images := readDir (printf "static/%s" (.Get "images")) -}}
+<section class="pdf-carousel" aria-label="{{ $title }} slides" data-pdf-carousel>
+  <p class="pdf-carousel-hint">Swipe or scroll sideways to explore.</p>
+  <div class="pdf-carousel-track" tabindex="0" role="region" aria-label="{{ $title }} slides. Use left and right arrow keys to navigate.">
+    {{- range $i, $image := $images }}
+    <figure class="pdf-carousel-slide" role="group" aria-label="Slide {{ add $i 1 }} of {{ len $images }}">
+      <img src="{{ printf "%s/%s" ($.Get "images") $image.Name | relURL }}" alt="{{ $title }} presentation, slide {{ add $i 1 }}" width="1281" height="1600" {{ if $i }}loading="lazy"{{ else }}fetchpriority="high"{{ end }}>
+    </figure>
+    {{- end }}
+  </div>
+  <div class="pdf-carousel-controls">
+    <button type="button" data-prev aria-label="Previous slide" hidden>←</button>
+    <span data-counter aria-live="polite" aria-atomic="true">1 / {{ len $images }}</span>
+    <button type="button" data-next aria-label="Next slide" hidden>→</button>
+    <a href="{{ .Get "pdf" | relURL }}">Open original PDF</a>
+  </div>
+</section>
+{{- $script := resources.Get "js/pdf-carousel.js" | minify | fingerprint -}}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>

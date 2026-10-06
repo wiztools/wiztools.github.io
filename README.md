@@ -21,6 +21,27 @@ Generated files are written to `public/` and excluded from Git.
 
 ## Content
 
+### PDF carousels
+
+`/atelier/` uses the original PDF in `static/pdfs/atelier.pdf` and pre-rendered
+slides in `static/images/atelier/`. The reusable shortcode provides native
+horizontal scrolling and snapping, buttons, keyboard navigation, and a counter.
+No browser PDF library is required. To regenerate slides after replacing the PDF,
+use Poppler (remove any obsolete slides if the new PDF has fewer pages):
+
+```sh
+pdftoppm -jpeg -jpegopt quality=90 -scale-to 1600 static/pdfs/atelier.pdf static/images/atelier/slide
+```
+
+Embed another presentation using its own directory of page images:
+
+```text
+{{< pdf-carousel title="Atelier" images="images/atelier" pdf="pdfs/atelier.pdf" >}}
+```
+
+The slide artwork is displayed as images; selectable text and PDF links are
+available through the original PDF link.
+
 - `content/products.md`: the catalogue of 37 tools, 8 libraries, and the hosted Web Tester.
 - `content/books.md`: books and local cover images.
 - `content/tenets.md`, `history.md`, and `subwiz.md`: migrated informational pages.

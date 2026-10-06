@@ -33,3 +33,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--wiz-accent); ou
   .wiz-section-heading { display: block; }
   .wiz-feature { padding: 1.5rem; }
 }
+.pdf-carousel { margin: 1.5rem 0; max-width: 100%; }
+.pdf-carousel-hint { font-size: .875rem; opacity: .75; }
+.pdf-carousel-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; border-radius: .65rem; background: #161719; }
+.pdf-carousel-track .pdf-carousel-slide { flex: 0 0 100%; margin: 0; scroll-snap-align: start; scroll-snap-stop: always; }
+.pdf-carousel-track .pdf-carousel-slide img { display: block; width: 100%; max-height: 75svh; object-fit: contain; margin: 0 auto; }
+.pdf-carousel-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: .75rem; font-size: .875rem; }
+.pdf-carousel-controls button { border: 1px solid currentColor; border-radius: .4rem; padding: .35rem .85rem; cursor: pointer; }
+.pdf-carousel-controls button:disabled { opacity: .35; cursor: default; }
+.pdf-carousel-controls a { margin-left: auto; }
