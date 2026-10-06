@@ -52,7 +52,7 @@ available through the original PDF link.
 
 The original `/products.html`, `/tenets.html`, `/history.html`, and `/subwiz.html` URLs remain canonical. Directory-style alternatives redirect to them. `/index.html` remains the homepage output.
 
-Historical catalogue and author links were retained; their external destinations may have changed since the old site was last updated. RESTClient's homepage download link now points to GitHub Releases. The PHP OOP book uses the legacy homepage's featured Amazon link (the old sidebar linked to a different edition).
+Historical catalogue and author links were retained; their external destinations may have changed since the old site was last updated. Atelier is featured on the homepage with links to its presentation, source code, and GitHub Releases. The PHP OOP book uses the legacy homepage's featured Amazon link (the old sidebar linked to a different edition).
 
 ## Future documentation and blog
 
