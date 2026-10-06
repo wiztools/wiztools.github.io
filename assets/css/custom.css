@@ -1,5 +1,6 @@
 :root { --wiz-accent: #9b650c; --wiz-panel: #f7f7f5; --wiz-muted: #5e626c; --wiz-border: #e2e3e5; }
 .dark { --wiz-accent: #efb83f; --wiz-panel: #191c22; --wiz-muted: #a5aab5; --wiz-border: #2c3039; }
+.wiz-footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: .75rem 1.25rem; }
 .wiz-hero, .wiz-section { width: 100%; max-width: 1080px; margin-inline: auto; }
 .wiz-hero { padding: 3.5rem 0 4rem; }
 .wiz-eyebrow { color: var(--wiz-accent); font-size: .72rem; font-weight: 700; letter-spacing: .15em; margin-bottom: 1.15rem; }
