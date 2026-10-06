@@ -33,22 +33,32 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--wiz-accent); ou
   .wiz-section-heading { display: block; }
   .wiz-feature { padding: 1.5rem; }
 }
-.pdf-carousel { margin: 1.5rem 0; max-width: 100%; }
+.pdf-carousel { margin: 1.5rem 0; width: min(100%, calc(60svh + 112px)); }
 .pdf-carousel-hint { font-size: .875rem; opacity: .75; }
 .pdf-carousel-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; border-radius: .65rem; background: #161719; }
 .pdf-carousel-track .pdf-carousel-slide { flex: 0 0 100%; margin: 0; scroll-snap-align: start; scroll-snap-stop: always; }
 .pdf-carousel-track .pdf-carousel-slide img { display: block; width: 100%; max-height: 75svh; object-fit: contain; margin: 0 auto; }
 .pdf-carousel-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: .75rem; font-size: .875rem; }
 #content:has(.pdf-carousel) > h1 { text-align: left; }
-.pdf-carousel-stage { position: relative; }
-.pdf-carousel-stage button { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border: 1px solid rgb(255 255 255 / .3); border-radius: 50%; background: rgb(0 0 0 / .5); color: white; font-size: 1.25rem; cursor: pointer; opacity: 0; transition: opacity .15s ease; }
-.pdf-carousel-stage button[data-prev] { left: .75rem; }
-.pdf-carousel-stage button[data-next] { right: .75rem; }
-.pdf-carousel-stage:hover button, .pdf-carousel-stage:focus-within button { opacity: 1; }
-.pdf-carousel-stage:hover button:disabled, .pdf-carousel-stage:focus-within button:disabled { opacity: .3; cursor: default; }
-@media (hover: none), (pointer: coarse) {
-  .pdf-carousel-stage button { opacity: 1; }
-  .pdf-carousel-stage button:disabled { opacity: .3; cursor: default; }
+.pdf-carousel-stage { position: relative; padding-inline: 56px; }
+.pdf-carousel-stage button { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border: 1px solid var(--wiz-border); border-radius: 50%; background: var(--wiz-panel); color: inherit; font-size: 1.25rem; cursor: pointer; }
+.pdf-carousel-stage button[data-prev] { left: 0; }
+.pdf-carousel-stage button[data-next] { right: 0; }
+.pdf-carousel-stage button:disabled { opacity: .3; cursor: default; }
+@media (max-width: 500px) {
+  .pdf-carousel-stage { padding-inline: 44px; }
+  .pdf-carousel-stage button { width: 36px; height: 36px; }
 }
-@media (prefers-reduced-motion: reduce) { .pdf-carousel-stage button { transition: none; } }
 .pdf-carousel-controls a { margin-left: auto; }
+.pdf-carousel-stage .pdf-carousel-fullscreen { top: .75rem; right: 68px; transform: none; display: grid; place-items: center; border-radius: .4rem; background: rgb(0 0 0 / .6); color: white; opacity: 0; }
+.pdf-carousel-stage .pdf-carousel-fullscreen[hidden] { display: none; }
+.pdf-carousel-stage:hover .pdf-carousel-fullscreen,
+.pdf-carousel-stage:has(:focus-visible) .pdf-carousel-fullscreen { opacity: 1; }
+@media (max-width: 500px) { .pdf-carousel-stage .pdf-carousel-fullscreen { right: 52px; } }
+@media (hover: none), (pointer: coarse) { .pdf-carousel-stage .pdf-carousel-fullscreen { opacity: 1; } }
+.pdf-carousel:fullscreen { width: 100%; height: 100%; margin: 0; padding: 1rem; background: var(--wiz-panel); color: inherit; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: auto; }
+.pdf-carousel:fullscreen .pdf-carousel-hint { margin: 0 0 .75rem; }
+.pdf-carousel:fullscreen .pdf-carousel-fullscreen { display: none; }
+.pdf-carousel:fullscreen .pdf-carousel-stage,
+.pdf-carousel:fullscreen .pdf-carousel-controls { width: min(100%, calc((100dvh - 140px) * .8 + 112px)); }
+.pdf-carousel:fullscreen .pdf-carousel-slide img { max-height: calc(100dvh - 140px); }
