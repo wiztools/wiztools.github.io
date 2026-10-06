@@ -46,7 +46,7 @@ params:
       height: 44
   footer:
     displayCopyright: true
-    displayPoweredBy: true
+    displayPoweredBy: false
   search:
     enable: true
     type: flexsearch
