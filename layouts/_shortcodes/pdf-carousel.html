@@ -1,5 +1,10 @@
 {{- $title := .Get "title" -}}
-{{- $images := readDir (printf "static/%s" (.Get "images")) -}}
+{{- $images := slice -}}
+{{- range readDir (printf "static/%s" (.Get "images")) -}}
+  {{- if and (not .IsDir) (hasPrefix .Name "slide-") -}}
+    {{- $images = $images | append . -}}
+  {{- end -}}
+{{- end -}}
 <section class="pdf-carousel" aria-label="{{ $title }} slides" data-pdf-carousel>
   <p class="pdf-carousel-hint">Swipe or scroll sideways to explore.</p>
   <div class="pdf-carousel-stage">

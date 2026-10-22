@@ -7,8 +7,16 @@ import json
 
 root = Path(sys.argv[1] if len(sys.argv) > 1 else 'public').resolve()
 required = ('index.html', 'products.html', 'tenets.html', 'history.html', 'subwiz.html',
-            'books/index.html', 'favicon.svg', 'images/wiztools-logo.svg')
+            'books/index.html', 'atelier/index.html', 'atelier/getting-started/index.html',
+            'favicon.svg', 'images/wiztools-logo.svg')
 errors = [f'Missing migrated route: {p}' for p in required if not (root / p).is_file()]
+
+atelier = root / 'atelier/index.html'
+if atelier.is_file():
+    content = atelier.read_text()
+    for marker in ('data-pdf-carousel', '/atelier/getting-started/', 'Download Atelier'):
+        if marker not in content:
+            errors.append(f'Atelier landing page is missing expected content: {marker}')
 
 class Links(HTMLParser):
     def __init__(self):
