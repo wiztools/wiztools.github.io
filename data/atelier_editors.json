@@ -1,0 +1,34 @@
+[
+  {
+    "image": "images/atelier/editors/image.png",
+    "caption": "Image editor \u2014 crop an image or make targeted edits."
+  },
+  {
+    "image": "images/atelier/editors/audio.png",
+    "caption": "Audio editor \u2014 inspect the waveform and remove unwanted ranges."
+  },
+  {
+    "image": "images/atelier/editors/video-trim.png",
+    "caption": "Video editor \u2014 trim clips and cut unwanted footage."
+  },
+  {
+    "image": "images/atelier/editors/video-reframe.png",
+    "caption": "Video editor \u2014 reframe a clip for a different aspect ratio."
+  },
+  {
+    "image": "images/atelier/editors/composer.png",
+    "caption": "Video composer \u2014 arrange clips and configure the final composition."
+  },
+  {
+    "image": "images/atelier/editors/subtitle.png",
+    "caption": "Subtitle editor \u2014 revise cues, adjust timing, and review warnings."
+  },
+  {
+    "image": "images/atelier/editors/screenplay.png",
+    "caption": "Screenplay editor \u2014 revise a Fountain script alongside its formatted preview."
+  },
+  {
+    "image": "images/atelier/editors/markdown.png",
+    "caption": "Markdown editor \u2014 edit source text alongside the rendered document."
+  }
+]

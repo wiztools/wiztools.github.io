@@ -1,0 +1,21 @@
+<section class="pdf-carousel editor-carousel" aria-label="Atelier editors" data-pdf-carousel>
+  <p class="pdf-carousel-hint">Explore the editors with the arrows or swipe. Select a screenshot to open it full size.</p>
+  <div class="pdf-carousel-stage">
+    <div class="pdf-carousel-track" tabindex="0" role="region" aria-label="Editor screenshots. Use left and right arrow keys to navigate.">
+      {{ range $i, $slide := hugo.Data.atelier_editors }}
+      <figure class="pdf-carousel-slide" role="group" aria-label="Screenshot {{ add $i 1 }} of {{ len hugo.Data.atelier_editors }}">
+        <a href="{{ $slide.image | relURL }}" target="_blank" rel="noopener" aria-label="Open full-size screenshot: {{ $slide.caption }}">
+          <img src="{{ $slide.image | relURL }}" alt="{{ $slide.caption }}" width="2640" height="1784" loading="lazy">
+        </a>
+        <figcaption>{{ $slide.caption }}</figcaption>
+      </figure>
+      {{ end }}
+    </div>
+    <button type="button" data-prev aria-label="Previous screenshot" hidden>←</button>
+    <button type="button" data-next aria-label="Next screenshot" hidden>→</button>
+    <button type="button" class="pdf-carousel-fullscreen" data-fullscreen aria-label="Full screen" aria-pressed="false" hidden>⛶</button>
+  </div>
+  <div class="pdf-carousel-controls"><span data-counter aria-live="polite" aria-atomic="true">1 / {{ len hugo.Data.atelier_editors }}</span></div>
+</section>
+{{- $script := resources.Get "js/pdf-carousel.js" | minify | fingerprint -}}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>

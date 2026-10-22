@@ -51,6 +51,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--wiz-accent); ou
   .pdf-carousel-stage button { width: 36px; height: 36px; }
 }
 .pdf-carousel-controls a { margin-left: auto; }
+.editor-carousel { width: 100%; }
+.editor-carousel figcaption { padding: .75rem 1rem; font-size: .875rem; color: #eee; }
+.editor-carousel:fullscreen .pdf-carousel-stage,
+.editor-carousel:fullscreen .pdf-carousel-controls { width: min(100%, calc((100dvh - 200px) * 1.48 + 112px)); }
+.editor-carousel:fullscreen .pdf-carousel-slide img { max-height: calc(100dvh - 200px); }
 .pdf-carousel-stage .pdf-carousel-fullscreen { top: .75rem; right: 68px; transform: none; display: grid; place-items: center; border-radius: .4rem; background: rgb(0 0 0 / .6); color: white; opacity: 0; }
 .pdf-carousel-stage .pdf-carousel-fullscreen[hidden] { display: none; }
 .pdf-carousel-stage:hover .pdf-carousel-fullscreen,

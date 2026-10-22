@@ -9,3 +9,5 @@ sidebar:
 {{< pdf-carousel title="Atelier" images="images/atelier" pdf="pdfs/atelier.pdf" >}}
 
 [Atelier on GitHub](https://github.com/wiztools/atelier) · [Download Atelier](https://github.com/wiztools/atelier/releases/)
+
+[Getting Started]({{< relref "/atelier/getting-started" >}}) — Install Atelier, configure your models, and explore your workshop.
